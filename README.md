@@ -28,6 +28,8 @@ Readapt has its own lifecycle. Which uses a combination of high-level state, a s
 
 Readapt then provides your components a prop that they'll use to early return, avoiding making any DOM during specific renders, instead they'll render any virtual items that are children (tree list) or, simply return null if it doesn't have any. Other props are provided to allow the component to invalidate its dynamic size, so any props that would change the size are able to be calculated even if the component doesn't have any DOM (is off the screen). The final thing provided is a style object that uses transform to position the component relative to everything that came before it (they might not be in the dom!).
 
+![Render Flow](./diagrams/readapt-render-flow.png)
+
 # ENOUGH! How do I use it?
 
 First, wrap your existing root items with Readapt, refer to the `API Docs` (TODO) for more options.

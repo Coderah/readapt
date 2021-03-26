@@ -1,4 +1,6 @@
 # Readapt
+Currently under development, not production ready. All based on a single prototype iteration right now.
+
 A highly flexible React virtualization library for every situation. "Adapt. React. Readapt. Apt."
 
 TL;DR [How do I use it?](#enough-how-do-i-use-it)

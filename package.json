@@ -1,0 +1,34 @@
+{
+  "name": "readapt",
+  "version": "0.0.1",
+  "description": "A highly flexible React virtualization library for every situation. \"Adapt. React. Readapt. Apt.\"",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": "git@github.com:Coderah/readapt.git",
+  "author": "Coderah <alex@howardsupply.com>",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "@types/lodash": "^4.14.168",
+    "lodash": "^4.17.21",
+    "rollup": "^2.42.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "^16",
+    "@types/react-dom": "^16",
+    "react": "^16",
+    "react-dom": "^16"
+  },
+  "peerDependencies": {
+    "react": "^16",
+    "react-dom": "^16"
+  }
+}

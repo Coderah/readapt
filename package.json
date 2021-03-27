@@ -6,13 +6,15 @@
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "npx tsc",
+    "flowgen": "for file in $(find ./build -name *.d.ts -type f); do npx flowgen ${file} --no-inexact --add-flow-header -o ${file/.d.ts/.flow.js}; done;"
   },
   "repository": "git@github.com:Coderah/readapt.git",
   "author": "Coderah <alex@howardsupply.com>",
   "license": "GPL-3.0",
   "dependencies": {
     "@types/lodash": "^4.14.168",
+    "flowgen": "^1.13.0",
     "lodash": "^4.17.21",
     "rollup": "^2.42.4",
     "rollup-plugin-commonjs": "^10.1.0",
